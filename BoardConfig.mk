@@ -86,6 +86,9 @@ BOARD_MAIN_PARTITION_LIST := \
 	vendor \
 	product
 
+# System as Root
+BOARD_SUPPRESS_SECURE_ERASE := true
+
 # Platform
 TARGET_BOARD_PLATFORM := mt6765
 
