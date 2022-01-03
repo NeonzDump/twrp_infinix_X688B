@@ -13,20 +13,3 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
-
-# Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
-
-# Inherit from dandelion device
-$(call inherit-product, device/xiaomi/dandelion/device.mk)
-
-## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := dandelion
-PRODUCT_NAME := omni_dandelion
-PRODUCT_BRAND := xiaomi
-PRODUCT_MODEL := Redmi 9A
-PRODUCT_MANUFACTURER := xiaomi
