@@ -13,3 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+# Dynamic Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
