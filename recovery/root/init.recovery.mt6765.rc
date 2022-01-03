@@ -3,6 +3,7 @@ import /init.recovery.microtrust.rc
 on init
     mkdir /mnt/vendor/persist 0700 root root
     mount ext4 /dev/block/platform/bootdevice/by-name/persist /mnt/vendor/persist
+    export LD_LIBRARY_PATH /system/lib64:/vendor/lib64:/vendor/lib64/hw
 
 on fs
     install_keyring
@@ -21,13 +22,6 @@ service keystore /system/bin/keystore /tmp/misc/keystore
     disabled
     seclabel u:r:recovery:s0
 
-service variant-script /vendor/bin/unified-script.sh
-    user root
-    group root
-    disabled
-    oneshot
-    seclabel u:r:recovery:s0
-
 service gatekeeper-1-0 /vendor/bin/hw/android.hardware.gatekeeper@1.0-service
     user root
     group root
@@ -43,6 +37,7 @@ service keymaster-4-0 /vendor/bin/hw/android.hardware.keymaster@4.0-service.bean
 on property:hwservicemanager.ready=true
     start keymaster-4-0
     start gatekeeper-1-0
+    start teei_daemon
 
 on property:ro.crypto.state=unsupported
     stop teei_daemon
