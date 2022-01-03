@@ -4,6 +4,7 @@ on init
     mkdir /mnt/vendor/persist 0700 root root
     mount ext4 /dev/block/platform/bootdevice/by-name/persist /mnt/vendor/persist
     export LD_LIBRARY_PATH /system/lib64:/vendor/lib64:/vendor/lib64/hw
+    export PATH /sbin:/system/bin:/vendor/bin:/vendor/bin/hw
 
 on fs
     install_keyring
@@ -37,7 +38,6 @@ service keymaster-4-0 /vendor/bin/hw/android.hardware.keymaster@4.0-service.bean
 on property:hwservicemanager.ready=true
     start keymaster-4-0
     start gatekeeper-1-0
-    start teei_daemon
 
 on property:ro.crypto.state=unsupported
     stop teei_daemon
