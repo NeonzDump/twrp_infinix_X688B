@@ -22,6 +22,7 @@ service teei_daemon /system/bin/teei_daemon \
     user root
     group root
     disabled
+    seclabel u:r:recovery:s0
 
 on boot
     chown system system /sys/bus/platform/devices/utos/dcih_notify_test
