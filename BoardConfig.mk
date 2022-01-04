@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/dandelion
+DEVICE_PATH := device/xiaomi/garden
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -33,7 +33,7 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := dandelion
+TARGET_OTA_ASSERT_DEVICE := garden
 
 # Kernel
 BOARD_KERNEL_CMDLINE := \
