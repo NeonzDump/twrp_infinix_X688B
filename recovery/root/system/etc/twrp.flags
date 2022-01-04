@@ -5,7 +5,7 @@
 # Currently we dont have e2fsck compiled. So fs check would failed.
 # mount point   	fstype	device							flags
 
-/recovery		emmc	/dev/block/platform/bootdevice/by-name/recovery		flags=display="Recovery"
+/recovery		emmc	/dev/block/platform/bootdevice/by-name/recovery		flags=display="Recovery";backup=1
 /boot			emmc	/dev/block/platform/bootdevice/by-name/boot		flags=display="Boot"
 /cache			ext4	/dev/block/platform/bootdevice/by-name/cache		flags=display="Cache"
 /storage		f2fs	/data/media/0						flags=display="Internal Storage";backup=1;usermrf;fsflags="bind";removable
