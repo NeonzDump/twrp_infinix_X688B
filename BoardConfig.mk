@@ -32,9 +32,6 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 
-# Assert
-TARGET_OTA_ASSERT_DEVICE := garden
-
 # Kernel
 BOARD_KERNEL_CMDLINE := \
 	bootopt=64S3,32N2,64N2 \
