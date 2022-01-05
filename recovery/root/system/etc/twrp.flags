@@ -16,6 +16,8 @@
 /nvcfg			emmc	/dev/block/platform/bootdevice/by-name/nvcfg		flags=backup=1
 /persist		ext4	/dev/block/platform/bootdevice/by-name/persist		flags=display="Persist"
 /persist_image		emmc	/dev/block/platform/bootdevice/by-name/persist		flags=display="Persist";backup=1
+/cust			ext4	/dev/block/platform/bootdevice/by-name/cust		flags=display="Cust"
+/cust_image		emmc	/dev/block/platform/bootdevice/by-name/cust		flags=display="Cust";backup=1;flashimg=1
 /persistent		emmc	/dev/block/platform/bootdevice/by-name/frp	
 /nvram			emmc	/dev/block/platform/bootdevice/by-name/nvram		flags=backup=1;display="NVRAM"
 /proinfo		emmc	/dev/block/platform/bootdevice/by-name/proinfo		
