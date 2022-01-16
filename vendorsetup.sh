@@ -45,7 +45,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_RECOVERY_BOOT_PARTITION="/dev/block/platform/bootdevice/by-name/boot"
 
 	# Alternate Codenames
-	export TARGET_DEVICE_ALT="dandelion,angelica,cattail,angelicain,cattailin,dandelionin"
+	export TARGET_DEVICE_ALT="dandelion,angelica,angelican,angelicain,cattail"
 
 	export OF_USE_GREEN_LED=0
 	export OF_HIDE_NOTCH=1

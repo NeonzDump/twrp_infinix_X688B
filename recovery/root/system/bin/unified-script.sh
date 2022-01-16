@@ -28,6 +28,15 @@ load_cattail()
     resetprop "ro.vendor.product.device" "cattail"
 }
 
+load_angelican()
+{
+    resetprop "ro.product.model" "Redmi 9C NFC"
+    resetprop "ro.product.name" "angelican"
+    resetprop "ro.build.product" "angelican"
+    resetprop "ro.product.device" "angelican"
+    resetprop "ro.vendor.product.device" "angelican"
+}
+
 load_angelicain()
 {
     resetprop "ro.product.model" "POCO C3"
@@ -46,6 +55,9 @@ case $project in
         ;;
     "angelica")
         load_angelica
+        ;;
+    "angelican")
+        load_angelican
         ;;
     "angelicain")
         load_angelicain
