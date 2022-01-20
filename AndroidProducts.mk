@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_garden.mk
+    $(LOCAL_DIR)/twrp_garden.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_garden-eng
+    twrp_garden-eng
