@@ -68,6 +68,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
 	# R11.1 Settings
 	export FOX_VERSION="R11.1_0"
+	export FOX_BUILD_TYPE="Beta"
 	export OF_MAINTAINER="Sushrut1101"
 
 	# OTA
