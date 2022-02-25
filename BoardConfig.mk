@@ -116,8 +116,3 @@ TW_MAX_BRIGHTNESS := 2047
 # Debug
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
-
-# MIUI V12.5 Android 11 Decryption Support
-BOARD_AVB_RECOVERY_ADD_HASH_FOOTER_ARGS += \
-	--prop com.android.build.boot.os_version:$(PLATFORM_VERSION) \
-	--prop com.android.build.boot.security_patch:$(PLATFORM_SECURITY_PATCH)
