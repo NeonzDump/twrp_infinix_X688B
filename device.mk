@@ -22,6 +22,9 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # API
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
+
 # Fastbootd
 PRODUCT_PACKAGES += \
 	android.hardware.fastboot@1.0-impl-mock
