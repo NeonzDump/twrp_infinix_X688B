@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/xiaomi/garden
+LOCAL_PATH := device/infinix/X688B
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true

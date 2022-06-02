@@ -42,12 +42,13 @@
 /dev/fw_log_wifi          0660   wifi     wifi
 
 # FMRadio
-/dev/fm                   0660   media     media
+#TCD:add XLJLHLJYR-21 for dev/fm by shouhui.li 20200810 start
+/dev/fm                   0666   media     media
+#TCD:add XLJLHLJYR-21 for dev/fm by shouhui.li 20200810 end
 
 # NFC
-/dev/msr3110              0666   root       root
-/dev/mt6605               0660   nfc        radio
 /dev/st21nfc              0660   nfc        radio
+/dev/st54spi              0660   secure_element        secure_element
 
 # MTK BTIF driver
 /dev/btif                 0600   system     system
@@ -134,4 +135,4 @@
 /dev/ttyACM0              0660   radio      radio
 
 # TrustKernel add
-/dev/tkcoredrv            0660   system     system
+/dev/tkcoredrv            0600   system     system

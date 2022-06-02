@@ -20,12 +20,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-# Inherit from garden device
-$(call inherit-product, device/xiaomi/garden/device.mk)
+# Inherit from X688B device
+$(call inherit-product, device/infinix/X688B/device.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := garden
-PRODUCT_NAME := twrp_garden
-PRODUCT_BRAND := xiaomi
-PRODUCT_MODEL := Redmi 9A
-PRODUCT_MANUFACTURER := xiaomi
+PRODUCT_DEVICE := X688B
+PRODUCT_NAME := twrp_X688B
+PRODUCT_BRAND :=Infinix
+PRODUCT_MODEL := Infinix Hot 11 Play
+PRODUCT_MANUFACTURER := Infinix
