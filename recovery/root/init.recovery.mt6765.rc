@@ -35,17 +35,6 @@ service keymaster-4-0 /system/bin/android.hardware.keymaster@4.0-service.beanpod
     disabled
     seclabel u:r:recovery:s0
 
-service unified-script /system/bin/unified-script.sh
-    user root
-    group root
-    disabled
-    oneshot
-    seclabel u:r:recovery:s0
-
-on boot
-    chmod 0777 /system/bin/unified-script.sh
-    start unified-script
-
 on property:hwservicemanager.ready=true
     start keymaster-4-0
     start gatekeeper-1-0
